@@ -1,0 +1,219 @@
+/* Register Form Specific Styles */
+
+/* Register Section */
+.register-section {
+    min-height: calc(100vh - 200px);
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-form {
+    max-width: 600px;
+    width: 100%;
+    padding: 0 var(--spacing-md);
+}
+
+/* Register Form Wrapper */
+.register-form-wrapper {
+    background-color: var(--bg-white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Form Header */
+.form-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.form-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.form-header p {
+    font-size: 0.9375rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Register Form */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* Form Row - 2 columns on desktop */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-xs);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-family: var(--font-primary);
+    font-size: 0.9375rem;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+    background-color: var(--bg-white);
+}
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.form-group input:hover {
+    border-color: #9ca3af;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    background-color: #2563eb;
+    color: var(--text-white);
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: var(--spacing-sm);
+}
+
+.btn-submit:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+/* Form Footer */
+.form-footer {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border-color);
+}
+
+.form-footer p {
+    font-size: 0.9375rem;
+    color: var(--text-dark);
+}
+
+.form-footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .register-section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .register-form-wrapper {
+        padding: var(--spacing-xl);
+    }
+
+    .form-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .form-header p {
+        font-size: 0.875rem;
+    }
+
+    /* Form row becomes single column on tablet */
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container-form {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .register-form-wrapper {
+        padding: var(--spacing-lg);
+    }
+
+    .form-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-header {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .register-form {
+        gap: var(--spacing-sm);
+    }
+
+    /* Ensure single column on mobile with full width */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .form-group input {
+        padding: 0.75rem 0.875rem;
+        font-size: 0.875rem;
+    }
+
+    .btn-submit {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9375rem;
+    }
+
+    .form-footer {
+        margin-top: var(--spacing-md);
+        padding-top: var(--spacing-md);
+    }
+
+    .form-footer p {
+        font-size: 0.875rem;
+    }
+}

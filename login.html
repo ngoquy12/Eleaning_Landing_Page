@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đăng nhập vào tài khoản Rikkei Education">
+    <title>Đăng Nhập - Rikkei Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://rikkei.edu.vn/wp-content/uploads/2025/09/Logo.png" alt="Rikkei Education Logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="index.html#courses">Khóa học</a></li>
+                        <li><a href="index.html#about">Giới thiệu</a></li>
+                        <li><a href="index.html#contact">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="register.html" class="btn btn-outline">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-left">
+                    <div class="auth-illustration">
+                        <h2>Chào mừng trở lại!</h2>
+                        <p>Tiếp tục hành trình học tập của bạn với hàng nghìn khóa học chất lượng cao</p>
+                        <div class="auth-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Truy cập không giới hạn</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Học mọi lúc, mọi nơi</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Chứng chỉ uy tín</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="auth-right">
+                    <div class="auth-box">
+                        <div class="auth-header">
+                            <h1>Đăng Nhập</h1>
+                            <p>Nhập thông tin để truy cập tài khoản</p>
+                        </div>
+
+                        <form class="auth-form">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Mật khẩu</label>
+                                <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+                            </div>
+
+                            <div class="form-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="remember">
+                                    <span>Ghi nhớ đăng nhập</span>
+                                </label>
+                                <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large btn-block">Đăng nhập</button>
+                        </form>
+
+                        <div class="divider">
+                            <span>Hoặc đăng nhập với</span>
+                        </div>
+
+                        <div class="social-login">
+                            <button class="btn-social google">
+                                <span class="social-icon">G</span>
+                                Google
+                            </button>
+                            <button class="btn-social facebook">
+                                <span class="social-icon">f</span>
+                                Facebook
+                            </button>
+                        </div>
+
+                        <div class="auth-switch">
+                            <span>Chưa có tài khoản?</span>
+                            <a href="register.html">Đăng ký ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://rikkei.edu.vn/wp-content/uploads/2025/09/Logo.png" alt="Rikkei Education Logo">
+                    </div>
+                    <p>Nền tảng học trực tuyến hàng đầu Việt Nam, mang đến kiến thức chất lượng cho mọi người.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Khóa học</h4>
+                    <ul>
+                        <li><a href="#">Lập trình</a></li>
+                        <li><a href="#">Thiết kế</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Kinh doanh</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Về chúng tôi</h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Giảng viên</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Hỗ trợ</h4>
+                    <ul>
+                        <li><a href="#">Trung tâm trợ giúp</a></li>
+                        <li><a href="#">Điều khoản</a></li>
+                        <li><a href="#">Chính sách</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rikkei Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

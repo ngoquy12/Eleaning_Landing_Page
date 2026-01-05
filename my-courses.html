@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khóa học của tôi - Quản lý và theo dõi tiến độ học tập tại Rikkei Education">
+    <title>Khóa Học Của Tôi - Rikkei Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="my-courses.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://rikkei.edu.vn/wp-content/uploads/2025/09/Logo.png" alt="Rikkei Education Logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="index.html#courses">Khóa học</a></li>
+                        <li><a href="my-courses.html" class="active">Khóa học của tôi</a></li>
+                        <li><a href="index.html#contact">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="user-menu">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="User" class="user-avatar">
+                        <span class="user-name">Nguyễn Văn A</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content-my">
+                <h1>Khóa Học Của Tôi</h1>
+                <p>Tiếp tục hành trình học tập và phát triển kỹ năng của bạn</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active">Tất cả khóa học (4)</button>
+                <button class="filter-tab">Đang học (2)</button>
+                <button class="filter-tab">Hoàn thành (1)</button>
+                <button class="filter-tab">Đã lưu (1)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Courses Grid -->
+    <section class="my-courses-section">
+        <div class="container">
+            <div class="my-courses-grid">
+     
+                <!-- Course Card 2 - In Progress -->
+                <div class="my-course-card">
+                    <div class="course-thumbnail-wrapper">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=225&fit=crop" alt="UI/UX Design" class="my-course-thumbnail">
+                        <div class="course-status-badge in-progress">Đang học</div>
+                    </div>
+                    <div class="my-course-content">
+                        <div class="course-category-small">Thiết kế</div>
+                        <h3 class="my-course-title">
+                            <a href="#">UI/UX Design Chuyên Nghiệp</a>
+                        </h3>
+                        <div class="course-instructor-small">
+                            <span>Giảng viên: Trần Thị B</span>
+                        </div>
+                        
+                        <div class="progress-section">
+                            <div class="progress-header">
+                                <span class="progress-label">Tiến độ học tập</span>
+                                <span class="progress-percent">20%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill" style="width: 20%"></div>
+                            </div>
+                            <div class="progress-details">
+                                <span>7/35 bài học</span>
+                                <span>28 giờ còn lại</span>
+                            </div>
+                        </div>
+
+                        <div class="course-actions">
+                            <a href="#" class="btn btn-primary btn-block">Tiếp tục học</a>
+                            <button class="btn-icon" title="Xem chi tiết">📊</button>
+                            <button class="btn-icon" title="Chứng chỉ">📜</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 - Completed -->
+                <div class="my-course-card">
+                    <div class="course-thumbnail-wrapper">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=225&fit=crop" alt="Digital Marketing" class="my-course-thumbnail">
+                        <div class="course-status-badge completed">Hoàn thành</div>
+                        <div class="completion-badge">✓</div>
+                    </div>
+                    <div class="my-course-content">
+                        <div class="course-category-small">Marketing</div>
+                        <h3 class="my-course-title">
+                            <a href="#">Digital Marketing Toàn Diện</a>
+                        </h3>
+                        <div class="course-instructor-small">
+                            <span>Giảng viên: Lê Văn C</span>
+                        </div>
+                        
+                        <div class="progress-section">
+                            <div class="progress-header">
+                                <span class="progress-label">Hoàn thành</span>
+                                <span class="progress-percent">100%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill completed" style="width: 100%"></div>
+                            </div>
+                            <div class="progress-details">
+                                <span>30/30 bài học</span>
+                                <span>Hoàn thành: 15/12/2025</span>
+                            </div>
+                        </div>
+
+                        <div class="course-actions">
+                            <a href="#" class="btn btn-outline btn-block">Xem lại</a>
+                            <button class="btn-icon" title="Tải chứng chỉ">📥</button>
+                            <button class="btn-icon" title="Đánh giá">⭐</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 - Saved -->
+                <div class="my-course-card">
+                    <div class="course-thumbnail-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=225&fit=crop" alt="Machine Learning" class="my-course-thumbnail">
+                        <div class="course-status-badge saved">Đã lưu</div>
+                    </div>
+                    <div class="my-course-content">
+                        <div class="course-category-small">AI & Data</div>
+                        <h3 class="my-course-title">
+                            <a href="#">Machine Learning Cơ Bản</a>
+                        </h3>
+                        <div class="course-instructor-small">
+                            <span>Giảng viên: Phạm Thị D</span>
+                        </div>
+                        
+                        <div class="course-info-saved">
+                            <div class="info-item">
+                                <span class="info-icon">⏱️</span>
+                                <span>50 giờ</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">📊</span>
+                                <span>Trung cấp</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">⭐</span>
+                                <span>4.9 (756)</span>
+                            </div>
+                        </div>
+
+                        <div class="course-price-small">
+                            <span class="price-new-small">2,799,000đ</span>
+                            <span class="price-old-small">3,999,000đ</span>
+                        </div>
+
+                        <div class="course-actions">
+                            <a href="#" class="btn btn-primary btn-block">Đăng ký ngay</a>
+                            <button class="btn-icon" title="Xóa khỏi danh sách">🗑️</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Thống Kê Học Tập</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Tổng khóa học</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Đang học</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Hoàn thành</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">⏰</div>
+                    <div class="stat-number">43</div>
+                    <div class="stat-label">Giờ học</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">📜</div>
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Chứng chỉ</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">🔥</div>
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Ngày liên tục</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đăng Nhập</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" name="email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Mật khẩu</label>
+                        <input type="password" id="login-password" name="password" placeholder="Nhập mật khẩu" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="remember">
+                            <span>Ghi nhớ đăng nhập</span>
+                        </label>
+                        <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large btn-block">Đăng nhập</button>
+                </form>
+                <div class="divider">
+                    <span>Hoặc đăng nhập với</span>
+                </div>
+                <div class="social-login">
+                    <button class="btn-social google">
+                        <span class="social-icon">G</span>
+                        Google
+                    </button>
+                    <button class="btn-social facebook">
+                        <span class="social-icon">f</span>
+                        Facebook
+                    </button>
+                </div>
+                <div class="auth-switch">
+                    <span>Chưa có tài khoản?</span>
+                    <a href="#registerModal">Đăng ký ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đăng Ký Tài Khoản</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="register-name">Họ và tên</label>
+                        <input type="text" id="register-name" name="name" placeholder="Nguyễn Văn A" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" name="email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-phone">Số điện thoại</label>
+                        <input type="tel" id="register-phone" name="phone" placeholder="0123456789">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Mật khẩu</label>
+                        <input type="password" id="register-password" name="password" placeholder="Tối thiểu 8 ký tự" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm">Xác nhận mật khẩu</label>
+                        <input type="password" id="register-confirm" name="confirm" placeholder="Nhập lại mật khẩu" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" required>
+                            <span>Tôi đồng ý với <a href="#">Điều khoản</a> và <a href="#">Chính sách</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large btn-block">Đăng ký</button>
+                </form>
+                <div class="divider">
+                    <span>Hoặc đăng ký với</span>
+                </div>
+                <div class="social-login">
+                    <button class="btn-social google">
+                        <span class="social-icon">G</span>
+                        Google
+                    </button>
+                    <button class="btn-social facebook">
+                        <span class="social-icon">f</span>
+                        Facebook
+                    </button>
+                </div>
+                <div class="auth-switch">
+                    <span>Đã có tài khoản?</span>
+                    <a href="#loginModal">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://rikkei.edu.vn/wp-content/uploads/2025/09/Logo.png" alt="Rikkei Education Logo">
+                    </div>
+                    <p>Nền tảng học trực tuyến hàng đầu Việt Nam, mang đến kiến thức chất lượng cho mọi người.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Khóa học</h4>
+                    <ul>
+                        <li><a href="#">Lập trình</a></li>
+                        <li><a href="#">Thiết kế</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Kinh doanh</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Về chúng tôi</h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Giảng viên</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Hỗ trợ</h4>
+                    <ul>
+                        <li><a href="#">Trung tâm trợ giúp</a></li>
+                        <li><a href="#">Điều khoản</a></li>
+                        <li><a href="#">Chính sách</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rikkei Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
